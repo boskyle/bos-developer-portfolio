@@ -1,11 +1,17 @@
 import React,{useState,useEffect} from 'react';
-
+import './profile.css';
 
 
 
 function Profile () {
 
-    return (<h2>Profile route</h2>);
+    return (
+        <div class="containerFluid mainContainer">
+
+        
+
+        </div>
+    );
 }
 
 export default Profile;
