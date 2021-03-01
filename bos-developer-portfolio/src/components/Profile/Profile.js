@@ -2,19 +2,15 @@ import React,{useState,useEffect} from 'react';
 import './profile.css';
 
 
-
-function Profile () {
+const Profile = () => {
 
     return (
-        <div class="containerFluid mainContainer">
+        <div className="mainContainerItem">Profile</div>
 
-        
-
-        </div>
     );
+
+
+
 }
 
 export default Profile;
-
-
-

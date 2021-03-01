@@ -1,0 +1,44 @@
+.mainContainer {
+    /* background-color: #1e2022; */
+    background-color:gray;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.mainContainerItem {
+    border: 1px solid white;
+    color: white;
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+.mainContainer {
+    flex-flow: column wrap;
+}
+}

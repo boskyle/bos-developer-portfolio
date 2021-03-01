@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Profile from './components/Profile/Profile';
+import Super from './components/Super';
 
 
 
@@ -11,7 +11,7 @@ function App() {
     <Router>
     <div className="App">
       <Switch>
-      <Route path="/" exact component={Profile}/>
+      <Route path="/" exact component={Super}/>
       </Switch>
     </div>
     </Router>
