@@ -5,11 +5,9 @@ import Profile from './Profile/Profile';
 import {useParams} from "react-router-dom";
 function Super () {
 
-    let {id} = useParams();
+    const {id} = useParams();
     
-    useEffect(() => {
-        console.log(id);
-    },[id])
+  console.log(id);
 
 
 

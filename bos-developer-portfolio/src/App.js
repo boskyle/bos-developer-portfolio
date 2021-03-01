@@ -12,6 +12,7 @@ function App() {
     <div className="App">
       <Switch>
       <Route path="/" component={Super}/>
+      <Route path="/:id" component={Super}/>
       </Switch>
     </div>
     </Router>

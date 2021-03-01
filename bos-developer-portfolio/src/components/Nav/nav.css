@@ -1,0 +1,14 @@
+.mainContainerItem {
+display:flex;
+flex-flow: column wrap;
+justify-content: flex-start;
+align-items: center;
+}
+.computer {
+    background-color:black;
+    border: 2px solid green;
+    height: 90%;
+    width: 85%;
+    border-radius:1em;
+    margin-top: 7.5%;
+}

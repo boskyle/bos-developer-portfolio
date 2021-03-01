@@ -6,6 +6,7 @@ const Nav = () => {
 
     return (<div className="mainContainerItem">
 
+    <div className="computer"></div>
 
     </div>);
 }
