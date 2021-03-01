@@ -11,7 +11,7 @@ function App() {
     <Router>
     <div className="App">
       <Switch>
-      <Route path="/" exact component={Super}/>
+      <Route path="/" component={Super}/>
       </Switch>
     </div>
     </Router>
