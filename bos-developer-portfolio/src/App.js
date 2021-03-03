@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
+import './assets/fonts/index.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Super from './components/Super';
+
 
 
 

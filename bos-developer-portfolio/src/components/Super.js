@@ -1,20 +1,29 @@
-import React,{useState,useEffect} from 'react';
+import React,{useEffect} from 'react';
 import './super.css';
 import Nav from './Nav/Nav';
-import Profile from './Profile/Profile';
-import {useParams} from "react-router-dom";
+import Parent from './Parent/Parent';
 function Super () {
 
-    const {id} = useParams();
-    
-  console.log(id);
+
+
+
+
+  useEffect(() => {
+      console.log('Super component mounted.');
+    },[])
+
+  useEffect(() => {
+    return (() => {
+      console.log("Super component unmounted.");
+  })
+  },[])
 
 
 
     return (
         <div className="containerFluid mainContainer">
         <Nav/>
-        <Profile/>
+        <Parent/>
         </div>
     );
 }

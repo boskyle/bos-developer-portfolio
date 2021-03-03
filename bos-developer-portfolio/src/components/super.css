@@ -7,7 +7,7 @@
 }
 
 .mainContainerItem {
-    border: 3px dotted white;
+    /* border: 3px dotted white; */
     color: white;
     flex: 1;
 }
