@@ -16,14 +16,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 600px) {
 .mainContainer {
     flex-flow: column wrap;

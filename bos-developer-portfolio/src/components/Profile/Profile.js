@@ -5,8 +5,16 @@ import './profile.css';
 const Profile = () => {
 
     return (
-        <div className="mainContainerItem">Profile</div>
+        <div className="mainContainerItem">
 
+        <h2>Profile</h2>
+
+
+
+
+
+
+        </div>
     );
 
 
