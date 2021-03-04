@@ -3,6 +3,11 @@ border: 1px solid green;
 background-color:black;
 color: green;
 font-family: terminal;
+border-radius:1em;
+display: flex;
+flex-flow: column nowrap;
+justify-content: flex-start;
+
 }
 
 
@@ -10,6 +15,35 @@ font-family: terminal;
     margin-top:1em;
     background-color:green;
     color: black;
-    width: 10%;
     text-align:center;
+    padding: 0em 0.25em 0em 0.25em;
 }
+
+.stats {
+    /* align-self: flex-start; */
+    padding: 1em;
+    margin:1em;
+    color: black;
+    background-color: green;
+   
+}
+
+.summary-goal{
+    width:90%;
+    height: 70%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.summary-goal > div {
+    flex: 1;
+    background-color:green;
+    color: black;
+    border-radius: 2em;
+}
+
+.summary-goal > div h3{
+    text-align: center;
+    font-size: 2.3em;
+}
+
