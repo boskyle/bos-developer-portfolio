@@ -18,9 +18,13 @@ const Profile = () => {
         </div>
 
 
-        <div className="summary-goal">
-       <div className="summary mr-5"><h3>SUMMARY</h3></div>
-       <div className="goal ml-5"><h3>GOAL</h3></div>
+    <div className="summary-goal">
+       <div className="summary"><h3>SUMMARY</h3>
+       <p>Lorem ipsum dolor sit amet, consectet.Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectet.Lorem</p>
+       </div>
+       <div className="goal"><h3>GOAL</h3>
+       <p>Lorem ipsum dolor sit amet, consectet.Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectet.Lorem</p>
+       </div>
 
         </div>
 

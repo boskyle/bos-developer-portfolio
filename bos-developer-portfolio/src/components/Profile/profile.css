@@ -17,6 +17,7 @@ justify-content: flex-start;
     color: black;
     text-align:center;
     padding: 0em 0.25em 0em 0.25em;
+    overflow-y: auto;
 }
 
 .stats {
@@ -30,20 +31,31 @@ justify-content: flex-start;
 
 .summary-goal{
     width:90%;
-    height: 70%;
     display: flex;
     flex-flow: row wrap;
 }
 
 .summary-goal > div {
     flex: 1;
-    background-color:green;
-    color: black;
-    border-radius: 2em;
+    color: green;
 }
 
 .summary-goal > div h3{
     text-align: center;
-    font-size: 2.3em;
+    font-size: 2.5em;
 }
 
+.summary-goal > div p {
+    font-size: 1.5em;
+    padding: 1.5em;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .summary-goal {
+        flex-flow: column wrap;
+    }
+
+
+
+  }
