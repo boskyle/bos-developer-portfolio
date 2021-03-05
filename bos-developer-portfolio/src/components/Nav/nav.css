@@ -27,24 +27,52 @@ align-items: center;
     border-bottom:3px dotted green;
 }
 
-.computer h3 {
+
+.computer >.nav-and-contacts {
+    margin-top:3em;
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+.computer > .nav-and-contacts > .computer-contacts {
+    color: green;
+    font-family: terminal;
+
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    bottom:15%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+
+
+.computer > .nav-and-contacts > .nav-collection h3 {
     color:green;
     font-family: terminal;
     font-size:1.75em;
     padding-bottom: 0.5em;
+    text-align:center;
+    margin-top: 0.5em;
 }
 
-.computer > .computer-contacts {
-    position: absolute;
-    bottom: 1em;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 92%;
-    height: 10%;
-    border: 3px dotted green;
-    /* make it flex */
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
+
+
+@media only screen and (max-width: 800px) {
+    .computer {
+        margin-top: 1em;
+    }
+    .computer > .nav-and-contacts > .nav-collection {
+        margin-top:-1em;
+    }
+    .computer > .nav-and-contacts > .nav-collection h3 {
+        text-align: left;
+    }
+
+
+
+  }
+
