@@ -37,9 +37,10 @@ align-items: center;
 .computer > .nav-and-contacts > .computer-contacts {
     color: green;
     font-family: terminal;
-
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
+    align-items: center;
+
     position: absolute;
     bottom:15%;
     left: 50%;
@@ -59,17 +60,40 @@ align-items: center;
     margin-top: 0.5em;
 }
 
+.links {
+    margin: 0em 0.25em 0em 0.25em;
+    color: green;
+}
+
 
 
 @media only screen and (max-width: 800px) {
     .computer {
         margin-top: 1em;
     }
+    .computer > .nav-and-contacts {
+        display: flex;
+        flex-flow: row nowrap;
+    }
     .computer > .nav-and-contacts > .nav-collection {
-        margin-top:-1em;
+        margin-top: -3em;
+        margin-right:35%;
+       
     }
     .computer > .nav-and-contacts > .nav-collection h3 {
         text-align: left;
+    }
+
+    .computer > .nav-and-contacts > .computer-contacts {
+    position: static;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top:-2.5em;
+    }
+
+    .links {
+        display:block;
+       
     }
 
 

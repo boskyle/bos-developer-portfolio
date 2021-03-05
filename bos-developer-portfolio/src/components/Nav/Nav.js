@@ -17,9 +17,12 @@ const Nav = () => {
         <NavLink to="/projects" style={{ textDecoration: 'none' }}><h3>Projects</h3></NavLink>
         <NavLink to="/experience"style={{ textDecoration: 'none' }}><h3>Experience</h3></NavLink>
         </section>   
-        <div className="computer-contacts">
+        <div className="computer-contacts w-100">
         <h4>contact</h4>
-
+        <div className="link-collection">
+        <a href="https://www.w3schools.com" target="_blank"><span className="links">linkedin</span></a> 
+        <a href="https://www.w3schools.com" target="_blank"><span className="links">github</span></a> 
+        </div>
         </div>
      </div>
 
