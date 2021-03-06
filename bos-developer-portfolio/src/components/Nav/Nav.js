@@ -20,6 +20,7 @@ const Nav = () => {
         <div className="computer-contacts w-100">
         <h4>contact</h4>
         <div className="link-collection">
+        <span className="links">email</span>
         <a href="https://www.linkedin.com/in/boskyle" target="_blank"><span className="links">linkedin</span></a> 
         <a href="https://github.com/boskyle" target="_blank"><span className="links">github</span></a> 
         </div>
