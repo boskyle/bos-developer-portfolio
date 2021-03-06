@@ -20,10 +20,11 @@ const Profile = () => {
 
             <div className="summary-goal mt-5">
             <div className="summary"><h3>SUMMARY</h3>
-            <p>Lorem ipsum dolor sit amet, consectet.Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectet.Lorem</p>
+            <p>Graduated from Humber College (Institute of Applied Technology and Advanced Learning) witih an Associate's Degree in Computer Engineering (Technologist). 
+                Though my degree encompasses both electrical and programming; I discovered that I have a passion and enjoyed the software side of the industry. </p>
             </div>
             <div className="goal"><h3>GOAL</h3>
-            <p>Lorem ipsum dolor sit amet, consectet.Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectet.Lorem</p>
+            <p>I aspire to be junior frontend developer. I want to be able to leverage the skills and way of thinking I have gained from computer engineering and apply it into software development. </p>
             </div>
             </div>
 

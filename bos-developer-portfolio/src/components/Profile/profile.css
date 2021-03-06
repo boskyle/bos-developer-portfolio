@@ -1,5 +1,5 @@
 .mainContainerItem:nth-child(2) {
-border: 1px solid green;
+border: 2px solid green;
 background-color:black;
 color: green;
 font-family: terminal;
@@ -7,7 +7,7 @@ border-radius:1em;
 display: flex;
 flex-flow: column nowrap;
 justify-content: flex-start;
-
+margin: 0.5em;
 }
 
 
