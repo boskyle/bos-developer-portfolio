@@ -95,9 +95,15 @@ align-items: center;
     flex-flow: column wrap;
     }
 
+    .link-collection {
+        margin-top:-1.5em;
+    }
+
     .links {
         display: block;
+        margin: 0.5em;
     }
+
    
 
  
