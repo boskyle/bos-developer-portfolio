@@ -1,0 +1,20 @@
+.mainContainerItem:nth-child(2) {
+    border: 2px solid green;
+    background-color:black;
+    color: green;
+    font-family: terminal;
+    border-radius:1em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em;
+    }
+
+.error-message {
+    font-size:4em;
+}
+
+
+
+    

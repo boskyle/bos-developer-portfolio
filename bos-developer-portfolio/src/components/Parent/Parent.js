@@ -3,6 +3,7 @@ import {useLocation} from 'react-router-dom';
 import Profile from '../Profile/Profile';
 import Project from '../Project/Project';
 import Experience from '../Experience/Experience';
+import NonExist from './NonExist';
 
 const Parent = () => {
 
@@ -35,7 +36,7 @@ const Parent = () => {
         case '/experience':
                 return <Experience/>;
         default:
-            return null;
+            return <NonExist/>;
          
       }
 
