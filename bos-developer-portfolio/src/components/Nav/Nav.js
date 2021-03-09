@@ -25,9 +25,9 @@ const Nav = () => {
      <div className="nav-and-contacts">
 
         <section className="nav-collection">
-        <NavLink to="/" exact={true} style={navStyle} classNamme ="nav-link" activeClassName="nav-selected">Profile</NavLink>
-        <NavLink to="/projects" style={navStyle} classNamme ="nav-link" activeClassName="nav-selected">Projects</NavLink>
-        <NavLink to="/experience"style={navStyle} classNamme ="nav-link" activeClassName="nav-selected">Experience</NavLink>
+        <NavLink to="/" exact={true} style={navStyle} className ="nav-link" activeClassName="nav-selected">profile</NavLink>
+        <NavLink to="/projects" style={navStyle} className ="nav-link" activeClassName="nav-selected">projects</NavLink>
+        <NavLink to="/experience"style={navStyle} className ="nav-link" activeClassName="nav-selected">experience</NavLink>
         </section>   
         <div className="computer-contacts w-100">
         <div className="link-collection">

@@ -79,7 +79,7 @@ align-items: center;
 .nav-selected {
     background-color: green;
     color: black !important;
-    width: 80%;
+   
 }
 
 
@@ -115,12 +115,18 @@ align-items: center;
         display: block;
         margin: 0.5em;
     }
-
-   
-
  
-
-
+    .nav-selected {
+        width:100%;
+    }
+    .nav-collection {
+        padding: 0em !important;
+        margin-bottom: 1em;
+    }
+    .nav-link {
+        padding: 0.1em !important;
+    }
+    
 
   }
 
