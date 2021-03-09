@@ -60,6 +60,10 @@ align-items: center;
 }
 .computer > .nav-and-contacts > .nav-collection {
     margin-top:30%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .links {
@@ -68,6 +72,14 @@ align-items: center;
 }
 .link-collection a:hover {
     text-decoration: none;
+}
+
+
+
+.nav-selected {
+    background-color: green;
+    color: black !important;
+    width: 80%;
 }
 
 

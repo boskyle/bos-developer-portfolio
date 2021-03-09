@@ -12,7 +12,7 @@ const Profile = () => {
             <span>
             <h3>Name:   Boswell Orendain</h3>
             <h3>Role:   Junior Web Developer</h3>
-            <h3>Hobby:  Fitness</h3>
+            {/* <h3>Hobby:  Fitness</h3> */}
             </span>
 
             </div>
@@ -20,7 +20,7 @@ const Profile = () => {
 
             <div className="summary-goal mt-5">
             <div className="summary"><h3>SUMMARY</h3>
-            <p>Graduated from Humber College (Institute of Applied Technology and Advanced Learning) witih an Associate's Degree in Computer Engineering (Technologist). 
+            <p>Graduated from Humber (Institute of Applied Technology and Advanced Learning) witih an Associate's Degree in Computer Engineering. 
                 Though my degree encompasses both electrical and programming; I discovered that I have a passion and enjoyed the software side of the industry. </p>
             </div>
             <div className="goal"><h3>GOAL</h3>

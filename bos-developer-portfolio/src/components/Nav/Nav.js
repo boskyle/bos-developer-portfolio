@@ -3,7 +3,19 @@ import {NavLink} from 'react-router-dom';
 import './nav.css';
 
 
+
+
 const Nav = () => {
+
+    const navStyle = {
+        textDecoration: 'none',
+        display: 'block',
+        color: 'green',
+        fontFamily: 'terminal',
+        fontSize: '1.75em',
+        textAlign: 'center',
+        marginTop:'0.5em'
+    }
 
 
     return (<div className="mainContainerItem">
@@ -13,9 +25,9 @@ const Nav = () => {
      <div className="nav-and-contacts">
 
         <section className="nav-collection">
-        <NavLink to="/" style={{ textDecoration: 'none' }}><h3>Profile</h3></NavLink>
-        <NavLink to="/projects" style={{ textDecoration: 'none' }}><h3>Projects</h3></NavLink>
-        <NavLink to="/experience"style={{ textDecoration: 'none' }}><h3>Experience</h3></NavLink>
+        <NavLink to="/" exact={true} style={navStyle} classNamme ="nav-link" activeClassName="nav-selected">Profile</NavLink>
+        <NavLink to="/projects" style={navStyle} classNamme ="nav-link" activeClassName="nav-selected">Projects</NavLink>
+        <NavLink to="/experience"style={navStyle} classNamme ="nav-link" activeClassName="nav-selected">Experience</NavLink>
         </section>   
         <div className="computer-contacts w-100">
         <div className="link-collection">
