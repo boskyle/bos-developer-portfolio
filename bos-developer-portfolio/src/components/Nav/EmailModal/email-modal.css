@@ -1,8 +1,41 @@
 .lg-overlay {
-    /* position: absolute; */
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: black;
+    margin: auto;
+    /* background-color: transparent; */
+    background-color: rgba(0, 0, 0, 0.8);
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.container-email-form {
+    position: relative;
+}
+.form-wrapper {
+    position: relative;
+    background-color:black;
+    border: 2px solid green;
+
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50vw;
+    height: 50vh;
+    align-items: center;
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+   .form-wrapper {
+       width:95vw;
+       height: 100vh;
+   }
+}
+
