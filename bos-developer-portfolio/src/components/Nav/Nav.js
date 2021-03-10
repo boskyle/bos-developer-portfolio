@@ -48,7 +48,7 @@ const Nav = () => {
     return (<div className="mainContainerItem">
 
     
-    <EmailModal isOpen={emailModal}/>
+    <EmailModal isOpen={emailModal} setIsOpen={setEmailModal}/>
     <div className="computer">
      <h2>boskyle@boskyle-dev-system Bosinux 5.10.15-1-BOS-TERMINAL x86_64 20.2.1</h2>
      <div className="nav-and-contacts">
