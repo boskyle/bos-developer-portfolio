@@ -1,11 +1,14 @@
 import React,{useState,useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
+import EmailModal from './EmailModal/EmailModal';
 import './nav.css';
 
 
 
 
 const Nav = () => {
+    
+    const [emailModal,setEmailModal] = useState(false);
 
     const navStyle = {
         textDecoration: 'none',
@@ -18,8 +21,33 @@ const Nav = () => {
     }
 
 
+    useEffect(() => {
+        console.log('Nav mounted.');
+    },[])
+
+    useEffect(() => {
+        return (() => {
+            console.log('Nav unmounted.');
+        })
+    },[])
+
+
+
+    const emailClicked = (e) => {
+        console.log(e.currentTarget.getAttribute('email-aria'));
+        setEmailModal(true);
+    }
+
+
+
+
+
+
+
     return (<div className="mainContainerItem">
 
+    
+    <EmailModal isOpen={emailModal}/>
     <div className="computer">
      <h2>boskyle@boskyle-dev-system Bosinux 5.10.15-1-BOS-TERMINAL x86_64 20.2.1</h2>
      <div className="nav-and-contacts">
@@ -31,7 +59,8 @@ const Nav = () => {
         </section>   
         <div className="computer-contacts w-100">
         <div className="link-collection">
-        <span className="links">email</span>
+        <span className="links" onClick={emailClicked} email-aria='email clicked'>email</span>
+        <a href="https://boskyle.me/documents/BoswellOrendain_DevResume.pdf" target="_blank"><span className="links">resumé</span></a> 
         <a href="https://www.linkedin.com/in/boskyle" target="_blank"><span className="links">linkedin</span></a> 
         <a href="https://github.com/boskyle" target="_blank"><span className="links">github</span></a> 
         </div>
