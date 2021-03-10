@@ -19,6 +19,12 @@ const EmailModal = ({isOpen,setIsOpen}) => {
     <div className="form-wrapper">
     <h2 className="mt-2">send me an email.</h2>
     <small onClick={EmailModalExit}>exit</small>
+    <form className="email-form w-100 h-100"novalidate>
+
+
+
+
+    </form>
     </div>
     
     </Modal>

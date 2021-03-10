@@ -18,6 +18,14 @@
 .container-email-form {
     position: relative;
 }
+
+.form-wrapper {
+    padding:1em;
+}
+.email-form {
+    border: 1px solid green;
+}
+
 .form-wrapper {
     position: relative;
     background-color:black;
@@ -29,8 +37,7 @@
     height: 50vh;
     align-items: center;
     color: orange;
-    font-family:terminal;
-    
+    font-family:terminal; 
 }
 .form-wrapper small {
     position: absolute;
