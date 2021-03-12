@@ -22,15 +22,12 @@
 .form-wrapper {
     padding:1em;
 }
-.email-form {
-    border: 1px solid green;
-}
 
 .form-wrapper {
     position: relative;
     background-color:black;
     border: 2px solid orange;
-
+    
     display: flex;
     flex-flow: column nowrap;
     width: 50vw;
@@ -46,6 +43,12 @@
     font-size:1.5em;
     color: red;
     cursor: pointer;
+}
+.email-form {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-flow: column wrap;
+    font-size:1.5em;
 }
 
 

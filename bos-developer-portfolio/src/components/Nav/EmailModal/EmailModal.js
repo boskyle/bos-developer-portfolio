@@ -17,10 +17,18 @@ const EmailModal = ({isOpen,setIsOpen}) => {
     return<Modal isOpen={isOpen} className="container-email-form" overlayClassName="lg-overlay" ariaHideApp={false} onRequestClose={EmailModalExit}> 
 
     <div className="form-wrapper">
-    <h2 className="mt-2">send me an email.</h2>
+    <h2 className="">send me an email.</h2>
     <small onClick={EmailModalExit}>exit</small>
-    <form className="email-form w-100 h-100"novalidate>
+    <form className="email-form w-100 h-100 p-3"novalidate>
+        <div className="form-group">
+        <label htmlFor="sender-email">Your Email</label>
+        <input className="form-control w-25"></input>
+        </div>
 
+        <div className="form-group">
+        <label htmlFor="sender-email">Subject</label>
+        <input className="form-control w-25" placeholder="Application Inquiry.."></input>
+        </div>
 
 
 
