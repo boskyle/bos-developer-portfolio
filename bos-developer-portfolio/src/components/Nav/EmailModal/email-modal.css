@@ -1,3 +1,7 @@
+*:focus {
+    outline: none;
+}
+
 .lg-overlay {
     position: absolute;
     top: 0;
@@ -51,6 +55,17 @@
     font-size:1.5em;
 }
 
+.form-group > input {
+    border: 2px solid orange;
+    border-radius: 0px;
+    background-color:black;
+    color: green !important;
+}
+
+.form-control:focus {
+  background-color: black;
+  border: 3px solid orange;
+}
 
 @media only screen and (max-width: 800px) {
    .form-wrapper {

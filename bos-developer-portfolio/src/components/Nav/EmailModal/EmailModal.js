@@ -22,12 +22,12 @@ const EmailModal = ({isOpen,setIsOpen}) => {
     <form className="email-form w-100 h-100 p-3"novalidate>
         <div className="form-group">
         <label htmlFor="sender-email">Your Email</label>
-        <input className="form-control w-25"></input>
+        <input className="form-control w-25"/>
         </div>
 
         <div className="form-group">
         <label htmlFor="sender-email">Subject</label>
-        <input className="form-control w-25" placeholder="Application Inquiry.."></input>
+        <input className="form-control w-25" placeholder="Application Inquiry.."/>
         </div>
 
 
