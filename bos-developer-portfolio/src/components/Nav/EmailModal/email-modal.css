@@ -1,5 +1,5 @@
 *:focus {
-    outline: none;
+    outline: none !important;
 }
 
 .lg-overlay {
@@ -51,7 +51,7 @@
 .email-form {
     /* border: 1px solid green; */
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     font-size:1.5em;
 }
 
@@ -64,8 +64,16 @@
 
 .form-control:focus {
   background-color: black;
-  border: 3px solid orange;
+  border-color: #28a745;
+  box-shadow:  none;
+ 
 }
+
+.form-item {
+    flex: 1;
+    align-items: center;
+}
+
 
 @media only screen and (max-width: 800px) {
    .form-wrapper {
@@ -75,5 +83,9 @@
    .form-wrapper small {
     font-size:1.2em;
 }
+    .email-form {
+        flex-flow: column wrap;
+    }
+
 }
 
