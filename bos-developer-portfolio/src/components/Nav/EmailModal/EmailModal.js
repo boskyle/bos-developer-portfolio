@@ -40,14 +40,14 @@ const EmailModal = ({isOpen,setIsOpen}) => {
             <label htmlFor="sender-email">Subject</label>
             <input className="form-control" placeholder="Inquiry.."/>
             </div>
-            <button  className="mx-auto mt-5" onClick={onSubmit}>Send</button>
+          
         </div>
 
 <div className="form-item d-flex flex-column"><h4>message <span>{charCounter}/200</span></h4>
         <textarea className="form-control w-100 mt-1 h-50" placeholder="Hello World!"
         onChange={e => setCount(e.target.value.length)}
         />
-        
+          <button  className="mt-5" onClick={onSubmit}>Send</button>
         </div>
 
     </form>
