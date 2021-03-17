@@ -73,6 +73,19 @@
     flex: 1;
     align-items: center;
 }
+.form-item button {
+    background-color: orange;
+    border: 2px solid green;
+    width:4em;
+    cursor: pointer;
+}
+
+.form-item textarea {
+    background-color:black;
+    border: 1px solid orange;
+    color: green !important;
+    font-size:1em;
+}
 
 
 @media only screen and (max-width: 800px) {
@@ -85,6 +98,10 @@
 }
     .email-form {
         flex-flow: column-reverse wrap;
+    }
+
+    .form-item button {
+        width: 6em;
     }
 
 }

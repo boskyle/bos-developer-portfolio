@@ -1,10 +1,14 @@
 import React,{useState,useEffect} from 'react';
 import Modal from 'react-modal';
+import {useForm} from 'react-hook-form';
 import './email-modal.css';
 
 
 const EmailModal = ({isOpen,setIsOpen}) => {
 
+
+    const {register, handleSubmit, errors, reset} = useForm();
+    const [charCounter, setCount] = useState(0);
 
     const EmailModalExit= () => {
         setIsOpen(false);
@@ -36,10 +40,15 @@ const EmailModal = ({isOpen,setIsOpen}) => {
             <label htmlFor="sender-email">Subject</label>
             <input className="form-control" placeholder="Inquiry.."/>
             </div>
-            <button  className="w-25 mx-auto mt-5" onClick={onSubmit}>Send</button>
+            <button  className="mx-auto mt-5" onClick={onSubmit}>Send</button>
         </div>
 
-        <div className="form-item d-flex flex-column"><h4>message</h4></div>
+<div className="form-item d-flex flex-column"><h4>message <span>{charCounter}/200</span></h4>
+        <textarea className="form-control w-100 mt-1 h-50" placeholder="Hello World!"
+        onChange={e => setCount(e.target.value.length)}
+        />
+        
+        </div>
 
     </form>
     </div>
