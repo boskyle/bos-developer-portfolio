@@ -10,6 +10,12 @@ const EmailModal = ({isOpen,setIsOpen}) => {
         setIsOpen(false);
     }
 
+    const onSubmit = (e) => {
+       e.preventDefault();
+    }
+
+    
+
   
 
 
@@ -30,7 +36,7 @@ const EmailModal = ({isOpen,setIsOpen}) => {
             <label htmlFor="sender-email">Subject</label>
             <input className="form-control" placeholder="Inquiry.."/>
             </div>
-            <button  className="btn w-50 mx-auto mt-5">Push</button>
+            <button  className="w-25 mx-auto mt-5" onClick={onSubmit}>Send</button>
         </div>
 
         <div className="form-item d-flex flex-column"><h4>message</h4></div>

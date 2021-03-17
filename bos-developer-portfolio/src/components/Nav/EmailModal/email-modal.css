@@ -84,7 +84,7 @@
     font-size:1.2em;
 }
     .email-form {
-        flex-flow: column wrap;
+        flex-flow: column-reverse wrap;
     }
 
 }
