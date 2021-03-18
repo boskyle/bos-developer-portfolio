@@ -15,8 +15,8 @@ const EmailModal = ({isOpen,setIsOpen}) => {
         setIsOpen(false);
     }
 
-    const onSubmit = (e) => {
-      console.log('submit');
+    const onSubmit = async fd => {
+     
     }
 
 
