@@ -1,35 +1,55 @@
 import React,{useState,useEffect} from 'react';
 import Modal from 'react-modal';
 import {useForm} from 'react-hook-form';
+
 import './email-modal.css';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const EmailModal = ({isOpen,setIsOpen}) => {
 
 
-    const {register, handleSubmit, errors, reset} = useForm();
+    const {register, handleSubmit, errors} = useForm();
     const [charCounter, setCount] = useState(0);
     const [charCounterFlag,setFlag] = useState(false);
+  
 
     const EmailModalExit= () => {
         setIsOpen(false);
     }
 
     const onSubmit = async fd => {
+  
+        let sendEmailUrl = 'http://boskyle.me/php-endpoints/send-email.php';
+        console.log(fd);
+
+        await fetch (sendEmailUrl,{
+        method: 'POST',
+        headers: {
+            'accept': 'application/json',
+            'content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            email: fd.email,
+            subject: fd.subject,
+            message: fd.message
+        })
+     }).then(response => response.text())
+            .then(response => {
+                console.log(response);
+                    toast.success("Thanks for shooting me a message, I'll reach out as soon as I can.");
+                    setCount(0);
+                    setIsOpen(false);
+            })
+                .catch(err => console.log(err))
+
      
     }
 
 
-    const charCounterNotExceededStyle = {
-        color: 'green'
-    }
-    const charCounterExceededStyle = {
-        color: 'red'
-    }
-
-  
     useEffect(() => {
-        console.log(charCounter);
         if (charCounter > 200) {
             setFlag(true);
         } else setFlag (false);
@@ -41,8 +61,9 @@ const EmailModal = ({isOpen,setIsOpen}) => {
 
    
     return<Modal isOpen={isOpen} className="container-email-form" overlayClassName="lg-overlay" ariaHideApp={false} onRequestClose={EmailModalExit}> 
-
+   
     <div className="form-wrapper">
+    
     <h2 className="">send me an email.</h2>
     <small onClick={EmailModalExit}>exit</small>
 
@@ -69,7 +90,14 @@ const EmailModal = ({isOpen,setIsOpen}) => {
             </div>
             <div className="form-group">
             <label htmlFor="sender-email">Subject</label>
-            <input className="form-control" placeholder="Inquiry.."/>
+            <input className="form-control" placeholder="Inquiry.."
+            name="subject" 
+            type="text"
+            ref={register({
+                required: false
+            })}
+            
+            />
             </div>
           
         </div>

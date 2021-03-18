@@ -5,13 +5,11 @@ import Project from '../Project/Project';
 import Experience from '../Experience/Experience';
 import NonExist from './NonExist';
 
+
+
 const Parent = () => {
-
-
     const location = useLocation();
     const [currentLocation,setLocation] = useState('/');
-
-
     useEffect(() => {
         console.log('Parent component mounted.');
       },[])
@@ -25,9 +23,7 @@ const Parent = () => {
       useEffect(() => {
           console.log(location.pathname);
           setLocation(location.pathname);
-      },[location])
-      
-  
+      },[location]) 
       switch (currentLocation) {
         case '/':
                 return <Profile/>;
