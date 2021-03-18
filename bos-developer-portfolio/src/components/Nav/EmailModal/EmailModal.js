@@ -9,6 +9,7 @@ const EmailModal = ({isOpen,setIsOpen}) => {
 
     const {register, handleSubmit, errors, reset} = useForm();
     const [charCounter, setCount] = useState(0);
+    const [charCounterFlag,setFlag] = useState(false);
 
     const EmailModalExit= () => {
         setIsOpen(false);
@@ -18,7 +19,22 @@ const EmailModal = ({isOpen,setIsOpen}) => {
       console.log('submit');
     }
 
-    
+
+    const charCounterNotExceededStyle = {
+        color: 'green'
+    }
+    const charCounterExceededStyle = {
+        color: 'red'
+    }
+
+  
+    useEffect(() => {
+        console.log(charCounter);
+        if (charCounter > 200) {
+            setFlag(true);
+        } else setFlag (false);
+       
+    },[charCounter])
 
   
 
@@ -58,7 +74,7 @@ const EmailModal = ({isOpen,setIsOpen}) => {
           
         </div>
 
-<div className="form-item d-flex flex-column"><h4>message <span>{charCounter}/200</span></h4>
+<div className="form-item d-flex flex-column"><h4>message <span><span className={charCounterFlag ? "message-exceeded" : "message-not-exceeded"}>{charCounter}</span>/200</span></h4>
         <textarea className="form-control w-100 mt-1 h-50" placeholder="Hello World!"
         onChange={e => setCount(e.target.value.length)}
         name="message"

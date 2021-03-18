@@ -94,6 +94,13 @@
     font-size: 0.75em;
 }
 
+.message-not-exceeded{
+    color: orange;
+}
+.message-exceeded {
+    color : red;
+}
+
 
 @media only screen and (max-width: 1120px) {
     .form-item {
