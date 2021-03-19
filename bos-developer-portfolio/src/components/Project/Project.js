@@ -16,6 +16,7 @@ const Project = () => {
             */}
         <ProjectItem title="Fitness Social Media"/>
         <ProjectItem title="Province Finder"/>
+        <ProjectItem title="Github Lookup-nator"/>
         
 
        

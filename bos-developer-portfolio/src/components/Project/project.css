@@ -1,24 +1,35 @@
 .projects-container {
     position: relative;
 
-    display: flex !important;
+    display: flex ;
     flex-flow: row wrap !important;
-    align-content: start !important;
+    align-content: flex-start;
     overflow: auto;
+    padding: 2.5em;
 
     
 }
 
 .project-item {
     border: 1px solid green;
-    flex: 2 1 30% !important;
-    height:25%;
+    flex: 2 1 30%;
+    height:20%;
     margin: 1em;
-
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-flow: column nowrap;
+    justify-content: start;
     align-items: center;
+}
+
+.project-item small {
+    font-size:1.25em;
+    cursor: pointer;
+    margin-top:2em;
+}
+
+.project-item small:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
 }
 
 
@@ -33,6 +44,12 @@
 
 .project-item {
     flex: 1 1 100% !important;
+}
+.project-item h2 {
+    font-size: 1.5em;
+}
+.project-item small {
+    margin-top: 0em;
 }
 
 
