@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
-import Modal from 'react-modal';
+import ProjectModal from '../ProjectModal/ProjectModal';
+
 
 
 
@@ -7,11 +8,15 @@ const ProjectItem = ({title}) => {
 
     const [projectModalState,openProjectModal] = useState(false);
 
+    const clickDescription = () => {
+        openProjectModal(true);
+    }
 
     // state of open modal
 return  (
     <div className="project-item"><h2>{title}</h2>
-    <small>description.</small>
+    <small onClick={clickDescription}>description.</small>
+    <ProjectModal isOpen={projectModalState}/>
     </div>
 
 );
