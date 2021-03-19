@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
 import EmailModal from './EmailModal/EmailModal';
-import {useForm} from 'react-hook-form';
 import './nav.css';
 
 
