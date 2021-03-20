@@ -39,7 +39,7 @@ const EmailModal = ({isOpen,setIsOpen}) => {
      }).then(response => response.text())
             .then(response => {
                 console.log(response);
-                    toast.success("Thanks for shooting me a message, I'll reach out as soon as I can.");
+                    toast.success("I got your message, I'll reach out as soon as I can.");
                     setCount(0);
                     setIsOpen(false);
             })

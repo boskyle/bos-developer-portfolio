@@ -15,7 +15,7 @@ const ProjectItem = ({title}) => {
     // state of open modal
 return  (
     <div className="project-item"><h2>{title}</h2>
-    <small onClick={clickDescription}>description.</small>
+    <small onClick={clickDescription}>view.</small>
     <ProjectModal isOpen={projectModalState} setIsOpen={openProjectModal} title={title}/>
     </div>
 
