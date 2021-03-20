@@ -17,9 +17,10 @@ const ProjectModal = ({isOpen,setIsOpen,title}) => {
     overlayClassName="prj-modal-ovl"
     className="project-modal-container"
     ariaHideApp={false}
+    onRequestClose={ProjectModalExit}
     >
     <small className="prj-exit" onClick={ProjectModalExit}>EXIT</small>
-    <h2 className="text-warning">{title}</h2>
+    <h2>{title}</h2>
     </Modal>);
 
 }
