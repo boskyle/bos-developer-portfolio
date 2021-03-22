@@ -44,7 +44,7 @@
 .flex-item:first-child > h2:first-of-type{
    background-color:green;
    color:black; 
-   margin-top:2em;
+   margin-top:2.5em;
    padding: 0.5em;
 }
 
@@ -55,6 +55,24 @@
     text-align: center;
 }
 
+/* technology container and items */
+
+.technologies-container {
+    width: 75%;
+    margin: 0.25em;
+    padding: 1em;   
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+.technology-item {
+    border: 1px solid green;
+    flex: 1 1 20%;
+    text-align: center;
+    margin: 6px;
+    font-size: 1.25em;;
+
+}  
 
 
 

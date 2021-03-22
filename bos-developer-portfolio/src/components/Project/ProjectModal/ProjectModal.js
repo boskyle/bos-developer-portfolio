@@ -30,7 +30,14 @@ const ProjectModal = ({isOpen,setIsOpen,title}) => {
             <p>lorem ipsum dolor sit am.long, sed diam lorem orem ipsum dolor sit am.long, sed diam lorem orem ipsum dolor sit am.long, sed diam lorem orem ipsum dolor sit am.long, sed diam lorem</p>
             <h2 className="mt-5">TECHNOLOGY USED</h2>
             <div className="technologies-container">     
-            
+                <div className="technology-item"><span>React</span></div>   
+                <div className="technology-item"><span>React</span></div>   
+                <div className="technology-item"><span>React</span></div>    
+                <div className="technology-item"><span>React</span></div> 
+                <div className="technology-item"><span>React</span></div>    
+                <div className="technology-item"><span>React</span></div>
+                <div className="technology-item"><span>React</span></div> 
+                     
             </div>
         </div>
         <div className="flex-item">
