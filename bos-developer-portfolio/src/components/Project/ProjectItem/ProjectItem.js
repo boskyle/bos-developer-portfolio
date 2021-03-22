@@ -4,7 +4,7 @@ import ProjectModal from '../ProjectModal/ProjectModal';
 
 
 
-const ProjectItem = ({title}) => {
+const ProjectItem = ({title,techUsed}) => {
 
     const [projectModalState,openProjectModal] = useState(false);
 
@@ -16,7 +16,7 @@ const ProjectItem = ({title}) => {
 return  (
     <div className="project-item"><h2>{title}</h2>
     <small onClick={clickDescription}>view.</small>
-    <ProjectModal isOpen={projectModalState} setIsOpen={openProjectModal} title={title}/>
+    <ProjectModal isOpen={projectModalState} setIsOpen={openProjectModal} title={title} techUsed={techUsed}/>
     </div>
 
 );

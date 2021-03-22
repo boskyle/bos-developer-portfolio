@@ -14,7 +14,10 @@ const Project = () => {
             {/* 
                 I should pass Title, Modal pop up => {Description,Tech Used (pos array),Images}
             */}
-        <ProjectItem title="Fitness Social Media"/>
+        <ProjectItem 
+        title="Fitness Social Media"
+        techUsed={['React','Redux','Bootstrap']}
+        />
         <ProjectItem title="Province Finder"/>
         <ProjectItem title="Github Lookup-nator"/>
         

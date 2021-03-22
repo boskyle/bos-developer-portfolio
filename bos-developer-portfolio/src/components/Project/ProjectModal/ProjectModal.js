@@ -3,14 +3,29 @@ import Modal from 'react-modal';
 import './project-modal.css';
 
 
-const ProjectModal = ({isOpen,setIsOpen,title}) => {
+const ProjectModal = ({isOpen,setIsOpen,title,techUsed}) => {
 
 
     const ProjectModalExit= () => {
         setIsOpen(false);
     }
 
-    var technlogiesSample = ["React","Bootstrap","Javascript"];
+ 
+   const tused = techUsed;
+   console.log(tused);
+    const [tUsed,setTUsed]= useState(<div><span></span></div>);
+
+    useEffect(() => {
+        if (tused !== undefined) {
+            const listitems = tused.map((tech) => <div className="technology-item"><span>{tech}</span></div>);
+            setTUsed(listitems);
+        }
+    },[])
+
+
+
+
+
 
 
     return (
@@ -30,14 +45,7 @@ const ProjectModal = ({isOpen,setIsOpen,title}) => {
             <p>lorem ipsum dolor sit am.long, sed diam lorem orem ipsum dolor sit am.long, sed diam lorem orem ipsum dolor sit am.long, sed diam lorem orem ipsum dolor sit am.long, sed diam lorem</p>
             <h2 className="mt-5">TECHNOLOGY USED</h2>
             <div className="technologies-container">     
-                <div className="technology-item"><span>React</span></div>   
-                <div className="technology-item"><span>React</span></div>   
-                <div className="technology-item"><span>React</span></div>    
-                <div className="technology-item"><span>React</span></div> 
-                <div className="technology-item"><span>React</span></div>    
-                <div className="technology-item"><span>React</span></div>
-                <div className="technology-item"><span>React</span></div> 
-                     
+            {tUsed}
             </div>
         </div>
         <div className="flex-item">
