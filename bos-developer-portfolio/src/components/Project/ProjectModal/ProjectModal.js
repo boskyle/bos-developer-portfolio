@@ -17,7 +17,7 @@ const ProjectModal = ({isOpen,setIsOpen,title,techUsed}) => {
 
     useEffect(() => {
         if (tused !== undefined) {
-            const listitems = tused.map((tech) => <div className="technology-item"><span>{tech}</span></div>);
+            const listitems = tused.map((tech,index) => <div className="technology-item" key={index}><span>{tech}</span></div>);
             setTUsed(listitems);
         }
     },[])
