@@ -10,6 +10,8 @@ const ProjectModal = ({isOpen,setIsOpen,title}) => {
         setIsOpen(false);
     }
 
+    var technlogiesSample = ["React","Bootstrap","Javascript"];
+
 
     return (
     <Modal
@@ -20,7 +22,22 @@ const ProjectModal = ({isOpen,setIsOpen,title}) => {
     onRequestClose={ProjectModalExit}
     >
     <small className="prj-exit" onClick={ProjectModalExit}>EXIT</small>
-    <h2>{title}</h2>
+
+    <div className="project-main-container">
+        <div className="flex-item">
+            <h2>{title}</h2>
+            <h2 className="mt-5">DESCRIPTION</h2>
+            <p>lorem ipsum dolor sit am.long, sed diam lorem orem ipsum dolor sit am.long, sed diam lorem orem ipsum dolor sit am.long, sed diam lorem orem ipsum dolor sit am.long, sed diam lorem</p>
+            <h2 className="mt-5">TECHNOLOGY USED</h2>
+            <div className="technologies-container">     
+            
+            </div>
+        </div>
+        <div className="flex-item">
+        <h2>SC</h2>   
+        </div>
+    </div>
+
     </Modal>);
 
 }

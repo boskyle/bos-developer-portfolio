@@ -19,11 +19,45 @@
     width: 75vw;
     height: 75vh;
 
+    
+}
+
+.project-modal-container > .project-main-container {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: green;
+    font-family: terminal;
+
+    display: flex;
+    flex-flow: row wrap;
+    overflow: auto;
+}
+.flex-item {
+    flex: 1;
+    
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    font-family: terminal;
 }
+
+.flex-item:first-child > h2:first-of-type{
+   background-color:green;
+   color:black; 
+   margin-top:2em;
+   padding: 0.5em;
+}
+
+.flex-item > p {
+    font-size: 1.5em;
+    padding: 0.25em;
+    margin: 0.25em;
+    text-align: center;
+}
+
+
+
+
 .prj-exit {
     position: absolute !important;
     color: red;
