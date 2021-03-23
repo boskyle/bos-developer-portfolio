@@ -2,8 +2,19 @@ import React,{useState,useEffect} from 'react';
 import Modal from 'react-modal';
 import './project-modal.css';
 
+// photo slider imports
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
+import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
 
-const ProjectModal = ({isOpen,setIsOpen,title,techUsed}) => {
+
+
+
+
+
+
+
+const ProjectModal = ({isOpen,setIsOpen,title,description,techUsed,img_urls}) => {
 
 
     const ProjectModalExit= () => {
@@ -11,20 +22,33 @@ const ProjectModal = ({isOpen,setIsOpen,title,techUsed}) => {
     }
 
  
-   const tused = techUsed;
-   console.log(tused);
-    const [tUsed,setTUsed]= useState(<div><span></span></div>);
+    const tused = techUsed;
+    const iurls = img_urls;
+    const [tUsed,setTUsed] = useState(<div><span></span></div>);
+    const [imageLinks,setLinks] = useState(<div data-src=""></div>);
 
+
+    
+    
     useEffect(() => {
         if (tused !== undefined) {
             const listitems = tused.map((tech,index) => <div className="technology-item" key={index}><span>{tech}</span></div>);
             setTUsed(listitems);
         }
+        if (img_urls !== undefined) {
+            const listItems = iurls.map((img,index) =><div data-src={img} key={index}></div>)
+            setLinks(listItems);
+        }
     },[])
 
 
+    useEffect(() => {
+        return () => {
+            setLinks([]);
+        }
+    },[])
 
-
+    console.log(imageLinks[0]);
 
 
 
@@ -42,14 +66,23 @@ const ProjectModal = ({isOpen,setIsOpen,title,techUsed}) => {
         <div className="flex-item">
             <h2>{title}</h2>
             <h2 className="mt-5">DESCRIPTION</h2>
-            <p>lorem ipsum dolor sit am.long, sed diam lorem orem ipsum dolor sit am.long, sed diam lorem orem ipsum dolor sit am.long, sed diam lorem orem ipsum dolor sit am.long, sed diam lorem</p>
+            <p>{description}</p>
             <h2 className="mt-5">TECHNOLOGY USED</h2>
             <div className="technologies-container">     
             {tUsed}
             </div>
         </div>
-        <div className="flex-item">
-        <h2>SC</h2>   
+        <div className="flex-item p-2">
+            <AwesomeSlider
+            className="slider-container mb-5"
+            animation="scaleOutAnimation"
+            bullets={false}
+            >
+            {imageLinks}
+           
+            </AwesomeSlider>
+
+      
         </div>
     </div>
 

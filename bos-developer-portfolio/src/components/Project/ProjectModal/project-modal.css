@@ -39,6 +39,11 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    margin:0.25em;
+}
+/* target second flex item */
+.flex-item:nth-child(2) {
+    justify-content: center;
 }
 
 .flex-item:first-child > h2:first-of-type{
@@ -74,6 +79,12 @@
 
 }  
 
+.slider-container {
+    /* border: 3px solid green; */
+    width: 75% !important;
+}
+
+
 
 
 .prj-exit {
@@ -93,10 +104,19 @@
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
 
 .project-modal-container > h2{
     margin-top: 1.5em;
+}
+.project-modal-container > .project-main-container {
+    flex-flow:column nowrap;
+    
+}
+.slider-container {
+    width: 75% !important;
+    height: 75% !important;
+    margin-top: 10%;
 }
 
 
