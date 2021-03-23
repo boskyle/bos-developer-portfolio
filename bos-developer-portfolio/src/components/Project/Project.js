@@ -16,7 +16,7 @@ const Project = () => {
             */}
         <ProjectItem 
         title="Fitness Social Media"
-        techUsed={['React','Redux','Bootstrap']}
+        techUsed={['React','Redux','Bootstrap','HTML5','JavaScript(ES6)','PHP','MySQL']}
         description="A fitness social media made for the people by the people. User can register,login, track their calories, see their progress."
         img_urls={['http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/fitness-homie-images/fh-front.png',
         'http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/fitness-homie-images/fh-main2.png',

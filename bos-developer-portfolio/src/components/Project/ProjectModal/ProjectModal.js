@@ -6,6 +6,7 @@ import './project-modal.css';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
+import 'react-awesome-slider/dist/custom-animations/open-animation.css';
 
 
 
@@ -75,8 +76,8 @@ const ProjectModal = ({isOpen,setIsOpen,title,description,techUsed,img_urls}) =>
         <div className="flex-item p-2">
             <AwesomeSlider
             className="slider-container mb-5"
-            animation="scaleOutAnimation"
-            bullets={false}
+            animation="openAnimation"
+            bullets={true}
             >
             {imageLinks}
            
