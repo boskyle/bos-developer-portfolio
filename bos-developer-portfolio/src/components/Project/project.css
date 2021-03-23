@@ -55,3 +55,15 @@
 
 
 }
+
+@media only screen  and (min-width: 2560px) { 
+
+    .project-item {
+        font-size: 150%;
+    }
+    .project-item h2 {
+        font-size: 120%;
+    }
+
+
+}

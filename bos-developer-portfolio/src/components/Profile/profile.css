@@ -89,3 +89,15 @@ align-items: center;
     }
 
   }
+
+/* 1440p screens */
+  @media only screen  and (min-width: 2560px) { 
+    .mainContainerItem:nth-child(2) {
+        font-size: 125%;
+    }
+    .stats h3{
+        font-size: 200%;
+    }
+
+
+  }
