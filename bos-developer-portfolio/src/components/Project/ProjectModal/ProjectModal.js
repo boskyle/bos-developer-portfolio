@@ -72,6 +72,10 @@ const ProjectModal = ({isOpen,setIsOpen,title,description,techUsed,img_urls}) =>
             <div className="technologies-container">     
             {tUsed}
             </div>
+            <div className="project-links w-75">
+            <a  href="https://www.w3schools.com" style={{display: "inline-block"}} className="mr-2"><h2>CODE</h2></a>
+            <a  href="https://google.com" style={{display: "inline-block"}} className="ml-2"><h2>DEMO</h2></a>
+            </div>
         </div>
         <div className="flex-item p-2">
             <AwesomeSlider
@@ -80,10 +84,8 @@ const ProjectModal = ({isOpen,setIsOpen,title,description,techUsed,img_urls}) =>
             bullets={true}
             >
             {imageLinks}
-           
             </AwesomeSlider>
-
-      
+            
         </div>
     </div>
 
