@@ -1,11 +1,12 @@
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 
 
 
 const Experience = () => {
 
+
     return (
-        <div className="mainContainerItem">Experience</div>
+        <div className="mainContainerItem">to_be_added</div>
     );
 
 

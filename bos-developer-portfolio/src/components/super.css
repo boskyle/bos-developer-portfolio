@@ -10,7 +10,7 @@
     /* border: 3px dotted white; */
     color: white;
     flex: 1;
-    /* animation: textShadow 5s infinite; */
+    animation: textShadow 250s infinite;
 }
 .mainContainerItem:not(:first-child) {
     flex: 1 1 55%;

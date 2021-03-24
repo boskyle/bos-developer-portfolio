@@ -2,6 +2,16 @@ import React,{useState,useEffect} from 'react';
 import './project.css';
 
 import ProjectItem from './ProjectItem/ProjectItem';
+import { zoomIn } from 'react-animations';
+import { StyleSheet } from 'aphrodite';
+
+const styles = StyleSheet.create({
+  
+    fadeIn: {
+        animationName: zoomIn,
+        animationDuration: '0.25s'
+    }
+  })
 
 
 const Project = () => {
@@ -22,6 +32,10 @@ const Project = () => {
         'http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/fitness-homie-images/fh-main2.png',
         'http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/fitness-homie-images/fh-logbook.png',
         ]}
+
+        code_link="https://github.com/boskyle/laboratory/tree/main/react_lab/react_projects/fitness-homie/src"
+        demo_link="http://fitness-homie.com/"
+        styles={styles.fadeIn}
         />
         <ProjectItem 
         title="Github Lookup-nator"
@@ -44,6 +58,8 @@ const Project = () => {
         img_urls={['http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/pf-images/pf-1.png',
         'http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/pf-images/pf-2.png'
     ]}
+        code_link="https://github.com/boskyle/bos-portfolio-projects/tree/main/iss-tracker"
+        demo_link="http://provincefinder.boskyleprojects.com"
         />
         
 

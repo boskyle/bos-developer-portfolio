@@ -10,6 +10,7 @@ const Nav = () => {
     
     const [emailModal,setEmailModal] = useState(false);
 
+
     const navStyle = {
         textDecoration: 'none',
         display: 'block',
