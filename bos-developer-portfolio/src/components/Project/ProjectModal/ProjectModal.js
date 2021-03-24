@@ -15,7 +15,7 @@ import 'react-awesome-slider/dist/custom-animations/open-animation.css';
 
 
 
-const ProjectModal = ({isOpen,setIsOpen,title,description,techUsed,img_urls}) => {
+const ProjectModal = ({isOpen,setIsOpen,title,description,techUsed,img_urls,code_link,demo_link}) => {
 
 
     const ProjectModalExit= () => {
@@ -73,8 +73,8 @@ const ProjectModal = ({isOpen,setIsOpen,title,description,techUsed,img_urls}) =>
             {tUsed}
             </div>
             <div className="project-links w-75">
-            <a  href="https://www.w3schools.com" style={{display: "inline-block"}} className="mr-2"><h2>CODE</h2></a>
-            <a  href="https://google.com" style={{display: "inline-block"}} className="ml-2"><h2>DEMO</h2></a>
+            <a  href={code_link} target="_blank" style={{display: "inline-block"}} className="mr-2"><h2>CODE</h2></a>
+            <a  href={demo_link} target="_blank" style={{display: "inline-block"}} className="ml-2"><h2>DEMO</h2></a>
             </div>
         </div>
         <div className="flex-item p-2">

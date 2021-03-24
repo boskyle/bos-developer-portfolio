@@ -33,6 +33,9 @@ const Project = () => {
         'http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/github-lookup-images/gh-searched.png',
         'http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/github-lookup-images/gh-repos.png'
     ]}
+        code_link="https://github.com/boskyle/github-search-react"
+        demo_link="http://githubsearch.boskyleprojects.com"
+    
         />
         <ProjectItem 
         title="Province Finder"
@@ -41,7 +44,6 @@ const Project = () => {
         img_urls={['http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/pf-images/pf-1.png',
         'http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/pf-images/pf-2.png'
     ]}
-        
         />
         
 
