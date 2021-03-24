@@ -116,7 +116,7 @@
     --slider-transition-duration: 500ms !important;
 }
 
-.flex-item:nth-child(2) > .awssld > .awssld__wrapper > .awssld__container > .awssld__box > .awssld__content > img {
+.flex-item:nth-child(2)  .awssld > .awssld__wrapper > .awssld__container > .awssld__box > .awssld__content > img {
     object-fit: contain;
   }
   
@@ -170,6 +170,10 @@
     background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06)) !important;
     background-size: 100% 2px, 3px 100% !important;
     pointer-events: none;
+}
+
+.title {
+  margin-bottom: 2em;
 }
 
 @keyframes textShadow {
@@ -238,6 +242,15 @@
     }
   }
 
+
+
+@media only screen and (max-width: 800px) {
+  .project-modal-container {
+    width: 95vw;
+    height: 95vh;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
 
 .project-modal-container > h2{
@@ -257,6 +270,9 @@
 }
 /* 1440p screens */
 @media only screen  and (min-width: 2560px) {
+  .title {
+    margin-bottom: 3em;
+  }
     .project-links {
         margin-top: 15%;
     }

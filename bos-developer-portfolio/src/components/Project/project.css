@@ -10,7 +10,7 @@
     
 }
 
-.project-item {
+#project-item {
     border: 1px solid green;
     flex: 2 1 30%;
     height:20%;
@@ -21,13 +21,13 @@
     align-items: center;
 }
 
-.project-item small {
+#project-item small {
     font-size:1.25em;
     cursor: pointer;
     margin-top:2em;
 }
 
-.project-item small:hover {
+#project-item small:hover {
     text-decoration: underline;
     text-underline-offset: 0.25em;
 }
@@ -42,13 +42,13 @@
 @media only screen and (max-width: 1000px) { 
 
 
-.project-item {
+#project-item {
     flex: 1 1 100% !important;
 }
-.project-item h2 {
+#project-item h2 {
     font-size: 1.5em;
 }
-.project-item small {
+#project-item small {
     margin-top: 0em;
 }
 
@@ -58,10 +58,10 @@
 
 @media only screen  and (min-width: 2560px) { 
 
-    .project-item {
+    #project-item {
         font-size: 150%;
     }
-    .project-item h2 {
+    #project-item h2 {
         font-size: 120%;
     }
 

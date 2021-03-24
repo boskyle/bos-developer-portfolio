@@ -100,7 +100,7 @@ const ProjectModal = ({isOpen,setIsOpen,title,description,techUsed,img_urls,code
     <div className="project-main-container">
         <div className="flex-item">
             <section className={css(styles.leftSide)}>   
-            <h2 className="mb-4">{title}</h2>
+            <h2 className="title">{title}</h2>
             </section>
 
             <h2 className={css(styles.leftSide2)}>DESCRIPTION</h2>
