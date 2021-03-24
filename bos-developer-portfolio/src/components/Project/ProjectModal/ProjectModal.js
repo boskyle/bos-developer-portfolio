@@ -66,9 +66,9 @@ const ProjectModal = ({isOpen,setIsOpen,title,description,techUsed,img_urls}) =>
     <div className="project-main-container">
         <div className="flex-item">
             <h2>{title}</h2>
-            <h2 className="mt-5">DESCRIPTION</h2>
+            <h2 className="mt-3">DESCRIPTION</h2>
             <p>{description}</p>
-            <h2 className="mt-5">TECHNOLOGY USED</h2>
+            <h2 className="mt-3">TECHNOLOGY USED</h2>
             <div className="technologies-container">     
             {tUsed}
             </div>

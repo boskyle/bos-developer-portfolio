@@ -16,15 +16,33 @@ const Project = () => {
             */}
         <ProjectItem 
         title="Fitness Social Media"
-        techUsed={['React','Redux','Bootstrap','HTML5','JavaScript(ES6)','PHP','MySQL']}
-        description="A fitness social media made for the people by the people. User can register,login, track their calories, see their progress."
+        description="A Full-Stack fitness social web application. User can register,login, track their calories, see their progress."
+        techUsed={['React','Redux','Bootstrap','HTML5','JavaScript(ES6)','CSS','PHP','MySQL']}
         img_urls={['http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/fitness-homie-images/fh-front.png',
         'http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/fitness-homie-images/fh-main2.png',
-        'http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/fitness-homie-images/fh-logbook.png'
+        'http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/fitness-homie-images/fh-logbook.png',
         ]}
         />
-        <ProjectItem title="Province Finder"/>
-        <ProjectItem title="Github Lookup-nator"/>
+        <ProjectItem 
+        title="Github Lookup-nator"
+        description="A simple github lookup web application that utilizes asynchronous github api calls to display the searched users: Followers,Following and
+        Repositories.
+        "
+        techUsed={['Github API','React','Bootstrap','HTML5','CSS']}
+        img_urls={['http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/github-lookup-images/gh-main.png',
+        'http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/github-lookup-images/gh-searched.png',
+        'http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/github-lookup-images/gh-repos.png'
+    ]}
+        />
+        <ProjectItem 
+        title="Province Finder"
+        description="Allows users to enter a province/territory to display it on a map and show population count for that region."
+        techUsed={['Geonames API','Mapbox API','Bootstrap','HTML5','CSS','JavaScript','jQuery']}
+        img_urls={['http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/pf-images/pf-1.png',
+        'http://127.0.0.1/projects/bos-developer-portfolio/bos-developer-portfolio/src/assets/images/pf-images/pf-2.png'
+    ]}
+        
+        />
         
 
        

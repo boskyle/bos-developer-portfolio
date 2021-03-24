@@ -49,7 +49,7 @@
 .flex-item:first-child > h2:first-of-type{
    background-color:green;
    color:black; 
-   margin-top:2.5em;
+   margin-top:1.5em;
    padding: 0.5em;
 }
 
@@ -73,7 +73,7 @@
 }
 .technology-item {
     border: 1px solid green;
-    flex: 0 1 20%;
+    flex: 0 1 25%;
     text-align: center;
     margin: 6px;
     font-size: 1.25em;;
@@ -81,15 +81,20 @@
 }  
 
 .slider-container {
-    border: 3px solid green;
     width: 75% !important;
     --organic-arrow-color: #008000 !important;
     --control-bullet-color:  #008000 !important;
-    --control-bullet-active-color: #79ff00 !important;
-    --loader-bar-color: #851515 !important;
+    --control-bullet-active-color: #79FF00 !important;
+    --loader-bar-color: #79FF00 !important;
     --loader-bar-height: 6px !important;
     --slider-transition-duration: 500ms !important;
 }
+
+.flex-item:nth-child(2) > .awssld > .awssld__wrapper > .awssld__container > .awssld__box > .awssld__content > img {
+    object-fit: contain;
+  }
+  
+  
 
 
 
