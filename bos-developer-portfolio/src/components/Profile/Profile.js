@@ -42,7 +42,7 @@ const Profile = () => {
             <div className={css(styles.stats)}>
             <span>
             <h3>Name:   Boswell Orendain</h3>
-            <h3>Role:   Junior Web Developer</h3>
+            <h3>Role:   FrontEnd Developer</h3>
             {/* <h3>Hobby:  Fitness</h3> */}
             </span>
 
@@ -52,16 +52,18 @@ const Profile = () => {
             <div className="summary-goal mt-5">
             <div className={css(styles.summary)}><h3>BACKGROUND</h3>
             <p>Graduated from Humber (Institute of Applied Technology and Advanced Learning) witih an Associate's Degree in Computer Engineering. 
-                Though my degree encompasses both electrical and programming; I discovered that I have a passion and enjoyed the software side of the industry. </p>
+                Though my degree encompasses both electrical and programming; I discovered that I have a passion and enjoyed the software side of the industry.</p>
             </div>
             <div className={css(styles.goal)}><h3>AIM</h3>
-            <p>I aspire to be junior frontend developer. I want to be able to leverage the skills and way of thinking I have gained from computer engineering and apply it into software development. </p>
+            <p>I am a frontend developer with the ambition of landing a frontend/fullstack development role in a tech company where I can make a great impact on the success of the company.</p>
             </div>
             </div>
 
             <div className={css(styles.mindset)}>
             <h3 className="mindset">MINDSET</h3>
-            <p className="display-4">Self-Discipline. The driver of daily execution.</p>
+            <p className="display-4">When I create my UI Designs for my web applications, I put myself in the shoes of the user and go in-depth on how they would interact with the application; 
+            from here ideas and creativity are made into fruition that creates a user-friendly environment.
+            </p>
             </div>
 
         
