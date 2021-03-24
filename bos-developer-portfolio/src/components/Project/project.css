@@ -13,11 +13,10 @@
 #project-item {
     border: 1px solid green;
     flex: 2 1 30%;
-    height:20%;
     margin: 1em;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -34,17 +33,19 @@
 
 
 
-
-
-
-
-
-@media only screen and (max-width: 1000px) { 
-
-
-#project-item {
-    flex: 1 1 100% !important;
+@media only screen and (max-width:768px) {
+    #project-item {
+        flex: 1 1 33%;
+    }
 }
+
+
+@media only screen and (max-width: 500px) { 
+
+    #project-item {
+        flex: 1 1 100%;
+    }
+
 #project-item h2 {
     font-size: 1.5em;
 }

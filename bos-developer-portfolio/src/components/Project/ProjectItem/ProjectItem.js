@@ -27,7 +27,8 @@ const ProjectItem = ({title,techUsed,description,img_urls,code_link,demo_link}) 
 return  (
     
 
-    <div id="project-item" className={css(styles.fadeIn)}><h2>{title}</h2>
+    <div id="project-item" className={css(styles.fadeIn)}>
+    <h2>{title}</h2>
     <small onClick={clickDescription}>view.</small>
     <ProjectModal isOpen={projectModalState} setIsOpen={openProjectModal} title={title} techUsed={techUsed} description={description} img_urls={img_urls} code_link={code_link} demo_link={demo_link}/>
     </div>
