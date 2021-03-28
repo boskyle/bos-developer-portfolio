@@ -13,7 +13,7 @@
 #project-item {
     border: 1px solid green;
     flex: 2 1 30%;
-    margin: 1em;
+    margin: 0.5em;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -23,7 +23,8 @@
 #project-item small {
     font-size:1.25em;
     cursor: pointer;
-    margin-top:2em;
+    margin-bottom: 1em;
+
 }
 
 #project-item small:hover {
