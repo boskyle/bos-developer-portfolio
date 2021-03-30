@@ -64,8 +64,8 @@ const EmailModal = ({isOpen,setIsOpen}) => {
    
     <div className="form-wrapper">
     
-    <h2 className="">send me an email.</h2>
-    <small onClick={EmailModalExit}>exit</small>
+    <h2 className="">send me an electronic message.</h2>
+    <small onClick={EmailModalExit}>EXIT</small>
 
     <form className="email-form w-100 h-100 p-3" onSubmit={handleSubmit(onSubmit)} noValidate>
         <div className="form-item d-flex flex-column">

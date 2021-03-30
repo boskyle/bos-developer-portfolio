@@ -61,7 +61,7 @@ const Nav = () => {
         <div className="computer-contacts w-100">
         <div className="link-collection">
         <span className="links" onClick={emailClicked} email-aria='email clicked'>email</span>
-        <a href="https://boskyle.me/documents/BoswellOrendain_DevResume.pdf" target="_blank"><span className="links">resumé</span></a> 
+        <a href="https://boskyle.me/documents/BoswellOrendain_Resume.pdf" target="_blank"><span className="links">resumé</span></a> 
         <a href="https://www.linkedin.com/in/boskyle" target="_blank"><span className="links">linkedin</span></a> 
         <a href="https://github.com/boskyle" target="_blank"><span className="links">github</span></a> 
         </div>
