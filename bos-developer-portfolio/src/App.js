@@ -6,8 +6,6 @@ import Super from './components/Super';
 
 
 
-
-
 function App() {
   return (
     <Router>

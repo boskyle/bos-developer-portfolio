@@ -22,7 +22,7 @@ const EmailModal = ({isOpen,setIsOpen}) => {
 
     const onSubmit = async fd => {
   
-        let sendEmailUrl = 'http://boskyle.me/php-endpoints/send-email.php';
+        let sendEmailUrl = 'https://boskyle.me/php-endpoints/send-email.php';
         console.log(fd);
 
         await fetch (sendEmailUrl,{
