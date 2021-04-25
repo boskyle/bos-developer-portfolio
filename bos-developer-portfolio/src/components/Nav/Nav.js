@@ -50,7 +50,7 @@ const Nav = () => {
     
     <EmailModal isOpen={emailModal} setIsOpen={setEmailModal}/>
     <div className="computer">
-     <h2>boskyle@boskyle-dev-system Bosinux 5.10.15-1-BOS-TERMINAL x86_64 20.2.1</h2>
+     <h2>boskyle@boskyle-dev-system Bosinux 5.10.15-1-BOS-TERMINAL x86_64 20.2.2</h2>
      <div className="nav-and-contacts">
 
         <section className="nav-collection">

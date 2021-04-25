@@ -1,17 +1,8 @@
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 import './project.css';
-
 import ProjectItem from './ProjectItem/ProjectItem';
-import { zoomIn } from 'react-animations';
-import { StyleSheet } from 'aphrodite';
 
-const styles = StyleSheet.create({
-  
-    fadeIn: {
-        animationName: zoomIn,
-        animationDuration: '0.25s'
-    }
-  })
+
 
 
 const Project = () => {
@@ -36,6 +27,7 @@ const Project = () => {
 
         code_link="https://github.com/boskyle/laboratory/tree/main/react_lab/react_projects/fitness-homie/src"
         demo_link="http://fitness-homie.com/"
+        order={1}
         />
         <ProjectItem 
         title="Github Lookup-nator"
@@ -46,10 +38,10 @@ const Project = () => {
         img_urls={['https://boskyle.me/assets/images/github-lookup-images/gh-main.png',
         'https://boskyle.me/assets/images/github-lookup-images/gh-searched.png',
         'https://boskyle.me/assets/images/github-lookup-images/gh-repos.png'
-    ]}
+        ]}
         code_link="https://github.com/boskyle/github-search-react"
         demo_link="http://githubsearch.boskyleprojects.com"
-    
+        order={2}
         />
         <ProjectItem 
         title="Province Finder"
@@ -57,14 +49,11 @@ const Project = () => {
         techUsed={['Geonames API','Mapbox API','Bootstrap','HTML5','CSS','JavaScript','jQuery']}
         img_urls={['https://boskyle.me/assets/images/pf-images/pf-1.png',
         'https://boskyle.me/assets/images/pf-images/pf-2.png'
-    ]}
+        ]}
         code_link="https://github.com/boskyle/bos-portfolio-projects/tree/main/iss-tracker"
         demo_link="http://provincefinder.boskyleprojects.com"
+        order={3}
         />
-        
-
-       
-        
         </div>
     );
 

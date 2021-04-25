@@ -9,7 +9,7 @@ const Profile = () => {
     const styles = StyleSheet.create({
         stats: {
           animationName: zoomIn,
-          animationDuration: '0.25s',
+          animationDuration: '0.75s',
           padding: '1em',
           margin:'1em',
           color:'black',
@@ -21,11 +21,11 @@ const Profile = () => {
         },
         goal: {
             animationName: zoomIn,
-             animationDuration: '1.5s',
+             animationDuration: '0.75s',
            },
         mindset: {
             animationName: zoomIn,
-            animationDuration: '2.25s',
+            animationDuration: '0.75s',
             display:'flex',
             flexFlow:'column wrap',
             width: '75%',
@@ -39,7 +39,7 @@ const Profile = () => {
         <div className="mainContainerItem">
 
       
-            <div className={css(styles.stats)}>
+            <div className={css(styles.stats)} >
             <span>
             <h3>Name:   Boswell Orendain</h3>
             <h3>Role:   FrontEnd Developer</h3>
@@ -50,7 +50,8 @@ const Profile = () => {
 
 
             <div className="summary-goal mt-5">
-            <div className={css(styles.summary)}><h3>BACKGROUND</h3>
+            <div className={css(styles.summary)}>
+            <h3>BACKGROUND</h3>
             <p>Graduated from Humber (Institute of Applied Technology and Advanced Learning) witih an Associate's Degree in Computer Engineering. 
                 Though my degree encompasses both electrical and programming; I discovered that I have a passion and enjoyed the software side of the industry.</p>
             </div>

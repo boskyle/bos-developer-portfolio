@@ -1,12 +1,11 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import ProjectModal from '../ProjectModal/ProjectModal';
-
-import { zoomIn } from 'react-animations';
+import { fadeInDown } from 'react-animations';
 import { StyleSheet,css } from 'aphrodite';
 
 
 
-const ProjectItem = ({title,techUsed,description,img_urls,code_link,demo_link}) => {
+const ProjectItem = ({title,techUsed,description,img_urls,code_link,demo_link,order}) => {
 
     const [projectModalState,openProjectModal] = useState(false);
 
@@ -17,8 +16,10 @@ const ProjectItem = ({title,techUsed,description,img_urls,code_link,demo_link}) 
     const styles = StyleSheet.create({
   
         fadeIn: {
-            animationName: zoomIn,
-            animationDuration: '0.5s'
+            animationName: fadeInDown,
+            animationDuration: '0.75s',
+            animationFillMode:'both',
+            animationDelay:`calc(${order} * 200ms)`
         }
       })
 
