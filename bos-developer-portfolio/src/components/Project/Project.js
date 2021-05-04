@@ -29,6 +29,21 @@ const Project = () => {
         demo_link="http://fitness-homie.com/"
         order={1}
         />
+
+        <ProjectItem
+        title="Canada Covid 19 Tracker"
+        description="Displays how many recorded cases are on a province or territory. It has an option to track confirmed covid 19 cases of all provinces/territories on a daily, weekly and monthly timeframe. Has a leaderboard
+        on which province/territory have the most confirmed cases to least confirmed cases."
+        techUsed={['React','Covid REST API','Javascript(ES6)','CSS','Bootstrap']}
+        img_urls={['https://boskyle.me/assets/images/ca-covid19-tracker-images/covid19-tracker-image-one.png',
+        'https://boskyle.me/assets/images/ca-covid19-tracker-images/covid19-tracker-image-two.png'
+        ]}
+        code_link="https://github.com/boskyle/covid19-tracker-canada"
+        demo_link="http://canadacovid19tracker.boskyleprojects.com/"
+        order={2}
+        />
+
+
         <ProjectItem 
         title="Github Lookup-nator"
         description="A simple github lookup web application that utilizes asynchronous github api calls to display the searched users: Followers,Following and
@@ -41,7 +56,7 @@ const Project = () => {
         ]}
         code_link="https://github.com/boskyle/github-search-react"
         demo_link="http://githubsearch.boskyleprojects.com"
-        order={2}
+        order={3}
         />
         <ProjectItem 
         title="Province Finder"
@@ -52,8 +67,9 @@ const Project = () => {
         ]}
         code_link="https://github.com/boskyle/bos-portfolio-projects/tree/main/iss-tracker"
         demo_link="http://provincefinder.boskyleprojects.com"
-        order={3}
+        order={4}
         />
+
         </div>
     );
 
