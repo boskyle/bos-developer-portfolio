@@ -69,6 +69,15 @@ const Project = () => {
         demo_link="http://provincefinder.boskyleprojects.com"
         order={4}
         />
+        <ProjectItem 
+        title="Lucky Station"
+        description="My doggos personal portfolio and blog website"
+        techUsed={['React','CSS','CSS Grid','SASS','Bootstrap']}
+        img_urls={['https://boskyle.me/assets/images/lucky-station-images/landing-page.png']}
+        code_link="https://github.com/boskyle/lucky-station"
+        demo_link="http://luckystation.boskyleprojects.com/"
+        order={5}
+        />
 
         </div>
     );
