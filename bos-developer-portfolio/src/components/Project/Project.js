@@ -31,7 +31,7 @@ const Project = () => {
         />
 
         <ProjectItem
-        title="Canada Covid 19 Tracker"
+        title="Canada Covid 19 Tracker!"
         description="Displays how many recorded cases are on a province or territory. It has an option to track confirmed covid 19 cases of all provinces/territories on a daily, weekly and monthly timeframe. Has a leaderboard
         on which province/territory have the most confirmed cases to least confirmed cases."
         techUsed={['React','Covid REST API','Javascript(ES6)','CSS','Bootstrap']}
