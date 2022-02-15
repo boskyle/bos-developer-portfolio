@@ -39,7 +39,7 @@ const Project = () => {
         'https://boskyle.me/assets/images/ca-covid19-tracker-images/covid19-tracker-image-two.png'
         ]}
         code_link="https://github.com/boskyle/covid19-tracker-canada"
-        demo_link="http://canadacovid19tracker.boskyleprojects.com/"
+        demo_link="https://main.dyyc7r2u5fj1r.amplifyapp.com"
         order={2}
         />
 
@@ -55,10 +55,11 @@ const Project = () => {
         'https://boskyle.me/assets/images/github-lookup-images/gh-repos.png'
         ]}
         code_link="https://github.com/boskyle/github-search-react"
-        demo_link="http://githubsearch.boskyleprojects.com"
+        demo_link="https://main.d2zcr4rx3gnrj7.amplifyapp.com"
         order={3}
         />
-        <ProjectItem 
+
+        {/* <ProjectItem 
         title="Province Finder"
         description="Allows users to enter a province/territory to display it on a map and show population count for that region."
         techUsed={['Geonames API','Mapbox API','Bootstrap','HTML5','CSS','JavaScript','jQuery']}
@@ -77,7 +78,7 @@ const Project = () => {
         code_link="https://github.com/boskyle/lucky-station"
         demo_link="http://luckystation.boskyleprojects.com/"
         order={5}
-        />
+        /> */}
 
         </div>
     );
